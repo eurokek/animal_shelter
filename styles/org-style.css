@@ -1,0 +1,66 @@
+body {
+	display: grid;
+	/* grid-template-columns: 1fr; 2 колонки: нав+контент */
+	grid-template-rows: auto 1fr;  /*2 строки: шапка+контент  */
+	height: 100vh; 
+
+	/* fr-fraction(доля), значит "часть доступного свободного пространства"
+
+	vh-viewport height (зависит от высоты окна браузера(viewport)), 100-вся высота экрана, 50-половина, 10-10% от высоты экрана
+	vw-viewport width-ширина окна аналогично */
+
+}
+
+header {
+	margin-bottom: 5px;
+	padding: 5px;
+	/* grid-column: 1 / 3; */
+	grid-row: 1;
+	/* border-bottom: 2px solid #65a954; */
+	background-color:#b9e69b ;
+	border-radius: 5px;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem; 
+
+	/* про rem-единица, зависящая от размера шрифта элемента <html>, по умолчанию 16px
+	есть у html {font-size:16px;}, то 1rem=16px, 2rem=32px, 0.75rem=12px */
+}
+.logo {
+	height: 5em;
+	width: auto;
+
+	/* em зависит от размера шрифта коннкретно тут в хедере */
+}
+.slogan {
+	font-family: 'Balsamiq Sans';
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	color: #ffffff;
+}
+
+
+
+.section-content {
+	display: flex;
+	gap: 10%;
+	margin-bottom: 30px;
+	align-items: flex-start;
+	/* align-items-вертикальное выравнивание элементов по поперечной оси,
+	flex-start-элементы прижимаются к верхнему краю контейнера
+	
+	во flex кста элементы располагаются по горизонтали, а не под друг другом, как обычно в html*/
+ }
+ section p {
+	line-height: 1.5;
+	font-size: 1.2rem;
+ }
+ .org-photo {
+	max-width: 30%;
+	height: auto;
+	border-radius: 5px;
+ }
