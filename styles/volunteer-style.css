@@ -65,3 +65,7 @@ header {
 	font-family: 'Balsamiq Sans';
 	font-weight: 400;
  } 
+
+#volunteering {
+	display: flex;
+}
