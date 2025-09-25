@@ -60,7 +60,7 @@ header {
 	font-size: 1.2rem;
  }
  .org-photo {
-	max-width: 30%;
-	height: auto;
+	max-width: auto;
+	height: 20%;
 	border-radius: 5px;
  }
