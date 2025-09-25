@@ -44,38 +44,24 @@ header {
 }
 
 
-
-.section-content {
-	display: flex;
-	gap: 10%;
-	margin-bottom: 30px;
-	align-items: flex-start;
-	/* align-items-вертикальное выравнивание элементов по поперечной оси,
-	flex-start-элементы прижимаются к верхнему краю контейнера
-	
-	во flex кста элементы располагаются по горизонтали, а не под друг другом, как обычно в html*/
- }
- section p {
-	line-height: 1.5;
-	font-size: 1.2rem;
- }
-.org-photo {
-	max-width: auto;
-	height: 200px;
+.volunteer { 
+	max-width: 20%;
+	height: auto;
 	border-radius: 5px;
  }
 
- .lol{
-	height: 200px;
-	width: auto;
-	border-radius: 5px;
+ .section-content li {
+	list-style: none;
  }
 
- .person {
-	display: flex;
-	background-color: #b9e69b;
-	border-radius: 5px;
-	padding: 10px;
-	margin: 10px;
-	gap: 10px;
+ .vol-text {
+	flex: 2;
  }
+ .vol-im {
+	flex: 1;
+ }
+
+ h3 {
+	font-family: 'Balsamiq Sans';
+	font-weight: 400;
+ } 

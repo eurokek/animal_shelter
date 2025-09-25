@@ -44,38 +44,59 @@ header {
 }
 
 
+.pets-pics {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap:20px;
+	margin-top: 15px;
+}
 
-.section-content {
-	display: flex;
-	gap: 10%;
-	margin-bottom: 30px;
-	align-items: flex-start;
-	/* align-items-вертикальное выравнивание элементов по поперечной оси,
-	flex-start-элементы прижимаются к верхнему краю контейнера
-	
-	во flex кста элементы располагаются по горизонтали, а не под друг другом, как обычно в html*/
- }
- section p {
-	line-height: 1.5;
-	font-size: 1.2rem;
- }
-.org-photo {
-	max-width: auto;
-	height: 200px;
-	border-radius: 5px;
- }
-
- .lol{
-	height: 200px;
-	width: auto;
-	border-radius: 5px;
- }
-
- .person {
-	display: flex;
-	background-color: #b9e69b;
-	border-radius: 5px;
+.pets-pics div {
+	background: #b9e69b;
+	border-radius: 8px;
 	padding: 10px;
-	margin: 10px;
-	gap: 10px;
+	text-align: center;
+}
+
+.pets-pics img {
+	width: auto;
+	height: 200px;
+	border-radius: 5px;
+}
+
+ .pets-pics p {
+	font-family: 'Balsamiq Sans';
+	font-weight: 400;
+	color: white;
  }
+
+ button {
+	background-color: #ffffff;
+	color: #b9e69b;
+	border-radius: 5px;
+ }
+
+ .misa {
+	background-color: #b9e69b;
+	width: 20px;
+	height: 400px;
+ }
+
+ .korgi {
+	background-color: #b9e69b;
+	width: 20px;
+	height: 100px;
+ }
+
+  .rigiy {
+	background-color: #b9e69b;
+	width: 20px;
+	height: 300px;
+ }
+
+ .vote {
+	margin-top: 30px;
+	display: flex;
+	gap:30%
+ }
+ 
