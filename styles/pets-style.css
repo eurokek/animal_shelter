@@ -3,6 +3,7 @@ body {
 	/* grid-template-columns: 1fr; 2 колонки: нав+контент */
 	grid-template-rows: auto 1fr;  /*2 строки: шапка+контент  */
 	height: 100vh; 
+	color: blue;
 
 	/* fr-fraction(доля), значит "часть доступного свободного пространства"
 
@@ -40,7 +41,7 @@ header {
 	font-weight: 400;
 	font-size: 1.5rem;
 	line-height: 1.2;
-	color: #ffffff;
+	color: #ffffff !important;
 }
 
 
@@ -99,4 +100,15 @@ header {
 	display: flex;
 	gap:30%
  }
+
+ h2::before {
+	content: " 🐾 ";
+ }
+ h2 + p {
+	font-style: italic;
+ }
+
+ /* h2 ~ .pets-pics p {
+	color: black;
+ } */
  
